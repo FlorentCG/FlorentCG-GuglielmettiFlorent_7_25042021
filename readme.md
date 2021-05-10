@@ -3,22 +3,18 @@ frontend => angular, scss
 bdd => mysql
 
 
-in your shell:
 
-install git, node & mysql : $sudo apt install git npm mysql-server;
-clone groupomania repository : $git clone https://github.com/Dreamswitch/groupomania.git;
 
-go into groupomania folder,
-install database : $sudo mysql < dataBase/groupomaniaDB.sql;
+1 Charger la base de données "groupomania"
 
-go into ./backend folder,
-install backend dependencies : $npm install;
-launch backend server : $npm start;
+2 Lancer le backend:
+a Dans le terminal taper: cd backend
+b Lancer le serveur avec la commande: nodemon server
 
-go into ./frontend/groupomania folder,
-install frontend dependencies : $npm install;
-launch frontend server : $npm start;
+3 Lancer le frontend:
+a Dans le terminal taper: cd frontend
+b Lancer le fornt avec la commande: ng serve
 
-now , a window should be automatiquely opened in your navigator at "localhost:4200"
+Le site doit être disponible à l'adresse: "localhost:4200"
 
 Enjoy ;)
