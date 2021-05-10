@@ -11,7 +11,7 @@
         <div class="container-login__login-form__container-fluid">
 
             <mat-form-field appearance="outline">
-                <mat-label>Enter your email</mat-label>
+                <mat-label>Entrez votre mail</mat-label>
                 <input
                     matInput
                     placeholder="pat@example.com"
@@ -26,7 +26,7 @@
             </mat-form-field>
 
             <mat-form-field appearance="outline">
-                <mat-label>Enter your password</mat-label>
+                <mat-label>Entrez votre mot de passe</mat-label>
                 <input
                     matInput
                     [type]="hide ? 'text' : 'password'"
@@ -63,14 +63,14 @@
             >
                 {{ errorMsg }}
             </p>
-            <p class="container-login__login-form__container-fluid__mdp">Forgotten Password ?</p>
+            
             <button
                 mat-raised-button
                 aria-label="open signin form"
                 class="btn--mid"
                 (click)="onOpenDialog();$event.preventDefault()"
             >
-                Create Account
+               Créer un compte
             </button>
         </div>
 

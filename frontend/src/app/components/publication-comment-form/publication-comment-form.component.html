@@ -48,7 +48,7 @@
                     class="comment-form__first-container__edit__form-group__fake-placeholder"
                     [ngClass]="{'display-none': commentForm.get('body').value }"
                 >
-                    Write a comment...
+                    Ecrire un commentaire...
                 </span>
                 <!-- action part -->
                 <div class="comment-form__first-container__edit__form-group__buttons">
@@ -71,7 +71,7 @@
                             class="mat-icon--custom"
                             [ngClass]="{'display-none': commentForm.invalid}"
                         >
-                            send
+                            Envoyer
                         </mat-icon>
                     </button>
 
@@ -115,8 +115,8 @@
         *ngIf="currentComment"
         (click)="onModifyCanceled($event)"
     >
-        click here to
-        <span class="comment-form__cancel-handler__trigger">cancel</span>
+        Cliquez ici
+        <span class="comment-form__cancel-handler__trigger">supprimer</span>
     </span>
 
     <!-- display error message -->

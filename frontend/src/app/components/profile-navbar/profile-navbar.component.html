@@ -1,7 +1,7 @@
 <nav class="navbar">
     <ul class="navbar__list">
         <li class="navbar__list__link">
-            <a class="navbar__list__link__ancre">About</a>
+            <a class="navbar__list__link__ancre">Profil</a>
             <button
                 aria-label="user's menu"
                 [matMenuTriggerFor]="menu"
@@ -20,14 +20,14 @@
                     (click)="openDialogModify();$event.preventDefault()"
                 >
                     <mat-icon>edit</mat-icon>
-                    <span>Modify</span>
+                    <span>Modifier</span>
                 </button>
                 <button
                     mat-menu-item
                     (click)="onDeleteUser()"
                 >
                     <mat-icon>delete_forever</mat-icon>
-                    <span>Delete</span>
+                    <span>Supprimer</span>
                 </button>
             </mat-menu>
 

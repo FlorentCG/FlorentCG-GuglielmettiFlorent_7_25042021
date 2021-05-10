@@ -15,14 +15,14 @@
             <mat-icon>close</mat-icon>
         </button>
 
-        <h2 class="title">What kind of super Hero are you ?</h2>
+        <h2 class="title">De quelle humeur êtes-vous? ?</h2>
         <!-- make a description -->
         <mat-form-field>
             <mat-label for="description">Description</mat-label>
             <textarea
                 rows="3"
                 matInput
-                placeholder="Ex. It makes me feel..."
+                placeholder="Joyeux, taquin, discret..."
                 class="form-control"
                 id="description"
                 formControlName="description"
@@ -37,7 +37,7 @@
             [disabled]="userDescriptionForm.invalid"
             [mat-dialog-close]="onModify()"
         >
-            SAVE
+            SAUVER
         </button>
         <!-- message error -->
         <p

@@ -26,7 +26,7 @@
                 mat-button
                 (click)="openDialogCreatePublication();$event.preventDefault()"
             >
-                What would you say, {{user.firstname | titlecase}} ?
+                Qu'avez-vous en tête {{user.firstname | titlecase}} ?
             </button>
         </div>
         <!-- second - preload media part -->
@@ -60,7 +60,7 @@
 
     <!-- publication layout -->
 
-    <p *ngIf="!loading && publications.length <= 0">Be the first one to post a Publication</p>
+    <p *ngIf="!loading && publications.length <= 0">Soyez le premier à donner votre avis!</p>
 
     <mat-card
         class="publication-card"
@@ -104,14 +104,14 @@
                     (click)="openDialogModify(publication);$event.preventDefault()"
                 >
                     <mat-icon>edit</mat-icon>
-                    <span>Modify</span>
+                    <span>Modifier</span>
                 </button>
                 <button
                     mat-menu-item
                     (click)="onDeletePublication(publication)"
                 >
                     <mat-icon>delete_forever</mat-icon>
-                    <span>Delete</span>
+                    <span>Supprimer</span>
                 </button>
             </mat-menu>
         </mat-card-header>
@@ -128,7 +128,7 @@
         >
         <!-- 2.5 -->
         <div class="container-fluid--between">
-            <p class="container-fluid--between__temperature">temperature  {{publication.nbrLikes}}°F</p>
+            <p class="container-fluid--between__temperature">température  {{publication.nbrLikes}}°F</p>
             <button
                 mat-button
                 (click)="mep.expanded = !mep.expanded"
@@ -150,7 +150,7 @@
                 mat-button
                 (click)="mep.expanded = !mep.expanded"
             >
-                <span class="display-text">COMMENT</span>
+                <span class="display-text">Commentaire</span>
                 <mat-icon>comment</mat-icon>
             </button>
         </mat-card-actions>
@@ -224,14 +224,14 @@
                                 (click)="onModifyComment(commentIndex, publicationIndex)"
                             >
                                 <mat-icon>edit</mat-icon>
-                                <span>Modify</span>
+                                <span>Modifier</span>
                             </button>
                             <button
                                 mat-menu-item
                                 (click)="onDeleteComment(comment)"
                             >
                                 <mat-icon>delete_forever</mat-icon>
-                                <span>Delete</span>
+                                <span>Supprimer</span>
                             </button>
                         </mat-menu>
                     </div>

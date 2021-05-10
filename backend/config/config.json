@@ -1,27 +1,26 @@
 {
   "development": {
-    "username": "will",
-    "password": "jumble",
+    "username": "root",
+    "password": null,
     "database": "groupomania",
     "host": "localhost",
-    "dialect": "mysql",
-    "operatorsAliases": 0,
-    "port":3306
+    "dialect": "mysql"
+    
   },
   "test": {
     "username": "root",
     "password": null,
     "database": "database_dev",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": 0
+    "dialect": "mysql"
+    
   },
   "production": {
     "username": "root",
     "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": 0
+    "dialect": "mysql"
+    
   }
 }
