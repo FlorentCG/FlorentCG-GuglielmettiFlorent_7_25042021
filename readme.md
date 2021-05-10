@@ -13,7 +13,7 @@ b Lancer le serveur avec la commande: nodemon server
 
 3 Lancer le frontend:
 a Dans le terminal taper: cd frontend
-b Lancer le fornt avec la commande: ng serve
+b Lancer le front avec la commande: ng serve
 
 Le site doit être disponible à l'adresse: "localhost:4200"
 
